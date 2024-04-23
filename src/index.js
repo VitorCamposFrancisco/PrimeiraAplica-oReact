@@ -1,13 +1,38 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css'; 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Inicial from './pages/Inicial';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import NavbarComponents from './components/NavbarComponents';
+import Cadastro from './pages/cadastro';
+import Sobre from './pages/sobre';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Inicial/>,
+  },
+  {
+    path: "/cadastro",
+    element: <Cadastro/>,
+  },
+  {
+    path: "/sobre",
+    element: <Sobre/>,
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <NavbarComponents/>
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
