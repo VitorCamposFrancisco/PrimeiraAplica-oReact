@@ -12,6 +12,7 @@ import {
 import NavbarComponents from './components/NavbarComponents';
 import Cadastro from './pages/cadastro';
 import Sobre from './pages/sobre';
+import Login from './pages/login';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: "/sobre",
     element: <Sobre/>,
+  },
+  {
+    path: "/login",
+    element: <Login/>,
   },
 ]);
 

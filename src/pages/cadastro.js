@@ -25,7 +25,7 @@ function Cadastro() {
                                     <label className="label-control ms-2">Digite a mensagem que queira enviar:</label>
                                     <textarea className="form-control" placeholder="Mensagem" rows="3"></textarea>
                                 </div>
-                                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                                <div class="text-end">
                                         <button type="button" class="btn btn-success col-sm-12 col-md-12 col-lg-2 mt-2">Enviar</button>
                                 </div>      
                         </div>
